@@ -27,7 +27,7 @@ async function execute(bot, message, args, command, data) {
 			await data.user.save();
 
 			await message.replyT(
-				`${bot.config.emojis.success} | You just deposited ⏣${bot.functions.formatNumber(
+				`${bot.config.emojis.success} | You just deposited :VivuBux:${bot.functions.formatNumber(
 					data.user.money.bankMax,
 				)} into your bank!`,
 			);
@@ -40,9 +40,7 @@ async function execute(bot, message, args, command, data) {
 			await data.user.save();
 
 			await message.replyT(
-				`${bot.config.emojis.success} | You just deposited ⏣${bot.functions.formatNumber(
-					data.user.money.balance,
-				)} into your bank!`,
+				`${bot.config.emojis.success} | You just deposited :VivuBux:	${bot.functions.formatNumber(data.user.money.balance,	)} into your bank!`,
 			);
 		}
 	} else {
@@ -63,7 +61,8 @@ async function execute(bot, message, args, command, data) {
 		}
 
 		if (data.user.money.bankMax < args[0]) {
-			return await message.replyT(`${bot.config.emojis.error} | You don't have enough bank space to hold ⏣${args[0]}!`);
+			return await message.replyT(`${bot.config.emojis.error} | You don't have enough bank space to hold :VivuBux:
+		${args[0]}!`);
 		}
 
 		args[0] = parseInt(args[0]);
@@ -75,7 +74,7 @@ async function execute(bot, message, args, command, data) {
 		data.user.markModified("money.bank");
 		await data.user.save();
 
-		await message.replyT(`${bot.config.emojis.success} | Deposited ⏣${bot.functions.formatNumber(args[0])} into bank!`);
+		await message.replyT(`${bot.config.emojis.success} | Deposited :VivuBux:${bot.functions.formatNumber(args[0])} into bank!`);
 	}
 }
 

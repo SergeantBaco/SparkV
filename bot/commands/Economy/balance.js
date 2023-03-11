@@ -17,8 +17,8 @@ async function execute(bot, message, args, command, data) {
 		.setTitle(`**${User.tag}'s Balance**`)
 		.setDescription(
 			`
-			🪙 Wallet: ⏣${bot.functions.formatNumber(UserData.money.balance)}\n
-			🏦 Bank: ⏣${bot.functions.formatNumber(UserData.money.bank)} / ${bot.functions.formatNumber(UserData.money.bankMax)}
+			🪙 Wallet: :VivuBux:${bot.functions.formatNumber(UserData.money.balance)}\n
+			🏦 Bank: :VivuBux:${bot.functions.formatNumber(UserData.money.bank)} / ${bot.functions.formatNumber(UserData.money.bankMax)}
 		`,
 		)
 		.setColor(bot.config.embed.color)

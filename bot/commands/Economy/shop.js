@@ -12,7 +12,7 @@ async function execute(bot, message, args, command, data) {
 			.setTitle(`Shop - ${item.name}`)
 			.setDescription(item.desc || "Well that's odd... this item doesn't have a description.")
 			.addField(`IDs`, item.ids.join(", "), true)
-			.addField("Price", item.sale ? `⏣ ${item.price}` : `This item isn't for sale.`, true)
+			.addField("Price", item.sale ? `:VivuBux:	${item.price}` : `This item isn't for sale.`, true)
 			.setColor("BLUE")
 			.setTimestamp();
 

@@ -35,7 +35,7 @@ module.exports = new cmd(
 				.setTitle(`Inventory - ${item}`)
 				.setDescription(itemData.description || "This item has no description.")
 				.addField("Amount Owned", UserData.inventory[item].toString(), true)
-				.addField("Price", `⏣ ${itemData.price}`, true)
+				.addField("Price", `:VivuBux: ${itemData.price}`, true)
 				.addField("ID", itemData.ids.join(", "), true)
 				.setColor(bot.config.embed.color);
 

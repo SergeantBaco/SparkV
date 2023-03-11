@@ -22,7 +22,7 @@ async function execute(bot, message, args, command, data) {
 		await data.user.save();
 
 		await message.replyT(
-			`${bot.config.emojis.success} | You just withdrawed ⏣${bot.functions.formatNumber(data.user.money.bank)} from your bank!`,
+			`${bot.config.emojis.success} | You just withdrawed :VivuBux:${bot.functions.formatNumber(data.user.money.bank)} from your bank!`,
 		);
 	} else {
 		if (!args[0]) {
@@ -51,7 +51,7 @@ async function execute(bot, message, args, command, data) {
 		await data.user.save();
 
 		await message.replyT(
-			`${bot.config.emojis.success} | Withdrawed ⏣${bot.functions.formatNumber(args[0])} from your bank!`,
+			`${bot.config.emojis.success} | Withdrawed :VivuBux:${bot.functions.formatNumber(args[0])} from your bank!`,
 		);
 	}
 }

@@ -40,7 +40,7 @@ async function execute(bot, message, args, command, data) {
 	await data.user.save();
 
 	await message.replyT(
-		`${bot.config.emojis.success} | You gave ${User} ⏣${bot.functions.formatNumber(args[1])} data.user.money.balance!`,
+		`${bot.config.emojis.success} | You gave ${User} :VivuBux:${bot.functions.formatNumber(args[1])} data.user.money.balance!`,
 	);
 }
 
