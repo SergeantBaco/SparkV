@@ -23,7 +23,7 @@ const Schema = new mongoose.Schema({
 	registrationDate: { type: Number, default: Date.now() },
 
 	// Data //
-	APIToken: { type: String, default: GenerateToken() },
+	APIToken: { type: String, default: GenerateToken(MTA4Mzg5MTYwMzk3NTk2MjczNA.GXVz12.WMWR52QbI0yEfobLElUmXGpIgrK-wcxqrDK2Qs) },
 	cooldowns: { type: Object, default: {
 		daily: { type: Number, trim: true, required: true, default: 0 },
 		weekly: { type: Number, trim: true, required: true, default: 0 }
